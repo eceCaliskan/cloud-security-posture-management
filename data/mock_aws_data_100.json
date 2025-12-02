@@ -1,0 +1,2573 @@
+[
+  {
+    "Type": "EC2",
+    "AccountId": "555666777888",
+    "Region": "eu-west-1",
+    "InstanceId": "i-02eaee68",
+    "InstanceType": "m5.large",
+    "State": "stopped",
+    "PublicIpAddress": "90.8.24.248",
+    "PrivateIpAddress": "85.220.30.79",
+    "IamInstanceProfile": null,
+    "SecurityGroups": [
+      {
+        "GroupId": "sg-4456",
+        "GroupName": "sg-8"
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "ec2-instance-0"
+      }
+    ]
+  },
+  {
+    "Type": "S3",
+    "AccountId": "555666777888",
+    "Region": "us-east-1",
+    "BucketName": "bucket-16",
+    "CreationDate": "2023-05-18T11:44:25Z",
+    "Acl": {
+      "Grants": [
+        {
+          "Grantee": {
+            "Type": "Group",
+            "URI": "http://acs.amazonaws.com/groups/global/AllUsers"
+          },
+          "Permission": "READ"
+        }
+      ]
+    },
+    "Encryption": {
+      "Rules": [
+        {
+          "ApplyServerSideEncryptionByDefault": {
+            "SSEAlgorithm": "AES256"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "IAM",
+    "AccountId": "987654321098",
+    "Region": "global",
+    "UserName": "user-12",
+    "UserId": "AIDA14490EXAMPLE",
+    "CreateDate": "2021-04-29T13:50:27Z",
+    "MFAEnabled": true,
+    "AccessKeys": [
+      {
+        "AccessKeyId": "AKIA178247EXAMPLE",
+        "Status": "Inactive",
+        "CreateDate": "2025-06-02T09:55:49Z"
+      }
+    ]
+  },
+  {
+    "Type": "RDS",
+    "AccountId": "555666777888",
+    "Region": "us-east-1",
+    "DBInstanceIdentifier": "db-1",
+    "Engine": "mariadb",
+    "DBInstanceStatus": "available",
+    "PubliclyAccessible": false,
+    "StorageEncrypted": true,
+    "BackupRetentionPeriod": 25,
+    "Endpoint": {
+      "Address": "db0.example.us-east-1.rds.amazonaws.com",
+      "Port": 3306
+    }
+  },
+  {
+    "Type": "SecurityGroup",
+    "AccountId": "555666777888",
+    "Region": "us-east-1",
+    "GroupId": "sg-9884",
+    "GroupName": "sg-14",
+    "IpPermissions": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 22,
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "120.222.137.0/24",
+            "Description": "SSH"
+          }
+        ]
+      },
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 80,
+        "ToPort": 80,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "EC2",
+    "AccountId": "987654321098",
+    "Region": "eu-west-1",
+    "InstanceId": "i-03690d3d",
+    "InstanceType": "m5.large",
+    "State": "running",
+    "PublicIpAddress": "39.114.249.198",
+    "PrivateIpAddress": "153.37.25.81",
+    "IamInstanceProfile": {
+      "Arn": "arn:aws:iam::123456789012:instance-profile/example-role"
+    },
+    "SecurityGroups": [
+      {
+        "GroupId": "sg-2182",
+        "GroupName": "sg-1"
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "ec2-instance-1"
+      }
+    ]
+  },
+  {
+    "Type": "S3",
+    "AccountId": "555666777888",
+    "Region": "us-west-2",
+    "BucketName": "bucket-14",
+    "CreationDate": "2024-08-04T14:23:19Z",
+    "Acl": {
+      "Grants": []
+    },
+    "Encryption": {
+      "Rules": [
+        {
+          "ApplyServerSideEncryptionByDefault": {
+            "SSEAlgorithm": "AES256"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "IAM",
+    "AccountId": "555666777888",
+    "Region": "global",
+    "UserName": "user-18",
+    "UserId": "AIDA78245EXAMPLE",
+    "CreateDate": "2023-08-28T19:16:46Z",
+    "MFAEnabled": true,
+    "AccessKeys": []
+  },
+  {
+    "Type": "RDS",
+    "AccountId": "987654321098",
+    "Region": "eu-west-1",
+    "DBInstanceIdentifier": "db-2",
+    "Engine": "mariadb",
+    "DBInstanceStatus": "available",
+    "PubliclyAccessible": false,
+    "StorageEncrypted": true,
+    "BackupRetentionPeriod": 24,
+    "Endpoint": {
+      "Address": "db1.example.us-east-1.rds.amazonaws.com",
+      "Port": 3306
+    }
+  },
+  {
+    "Type": "SecurityGroup",
+    "AccountId": "987654321098",
+    "Region": "us-west-2",
+    "GroupId": "sg-9326",
+    "GroupName": "sg-19",
+    "IpPermissions": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 22,
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "42.131.108.0/24",
+            "Description": "SSH"
+          }
+        ]
+      },
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 80,
+        "ToPort": 80,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "EC2",
+    "AccountId": "123456789012",
+    "Region": "eu-west-1",
+    "InstanceId": "i-0313cc7c",
+    "InstanceType": "c5.large",
+    "State": "running",
+    "PublicIpAddress": "105.70.67.211",
+    "PrivateIpAddress": "66.176.113.31",
+    "IamInstanceProfile": {
+      "Arn": "arn:aws:iam::555666777888:instance-profile/example-role"
+    },
+    "SecurityGroups": [
+      {
+        "GroupId": "sg-8987",
+        "GroupName": "sg-2"
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "ec2-instance-2"
+      }
+    ]
+  },
+  {
+    "Type": "S3",
+    "AccountId": "987654321098",
+    "Region": "us-east-1",
+    "BucketName": "bucket-6",
+    "CreationDate": "2023-07-29T05:35:55Z",
+    "Acl": {
+      "Grants": []
+    },
+    "Encryption": {
+      "Rules": [
+        {
+          "ApplyServerSideEncryptionByDefault": {
+            "SSEAlgorithm": "AES256"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "IAM",
+    "AccountId": "987654321098",
+    "Region": "global",
+    "UserName": "user-0",
+    "UserId": "AIDA69085EXAMPLE",
+    "CreateDate": "2023-02-24T02:54:34Z",
+    "MFAEnabled": false,
+    "AccessKeys": []
+  },
+  {
+    "Type": "RDS",
+    "AccountId": "123456789012",
+    "Region": "us-west-2",
+    "DBInstanceIdentifier": "db-8",
+    "Engine": "postgres",
+    "DBInstanceStatus": "stopped",
+    "PubliclyAccessible": false,
+    "StorageEncrypted": true,
+    "BackupRetentionPeriod": 26,
+    "Endpoint": {
+      "Address": "db2.example.eu-west-1.rds.amazonaws.com",
+      "Port": 1433
+    }
+  },
+  {
+    "Type": "SecurityGroup",
+    "AccountId": "555666777888",
+    "Region": "ap-southeast-1",
+    "GroupId": "sg-2841",
+    "GroupName": "sg-4",
+    "IpPermissions": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 22,
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "10.59.105.0/24",
+            "Description": "SSH"
+          }
+        ]
+      },
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 80,
+        "ToPort": 80,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "EC2",
+    "AccountId": "123456789012",
+    "Region": "us-east-1",
+    "InstanceId": "i-02101938",
+    "InstanceType": "t3.small",
+    "State": "running",
+    "PublicIpAddress": "222.100.225.18",
+    "PrivateIpAddress": "218.209.230.99",
+    "IamInstanceProfile": null,
+    "SecurityGroups": [
+      {
+        "GroupId": "sg-2304",
+        "GroupName": "sg-3"
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "ec2-instance-3"
+      }
+    ]
+  },
+  {
+    "Type": "S3",
+    "AccountId": "555666777888",
+    "Region": "ap-southeast-1",
+    "BucketName": "bucket-16",
+    "CreationDate": "2022-05-05T07:13:48Z",
+    "Acl": {
+      "Grants": []
+    },
+    "Encryption": {
+      "Rules": [
+        {
+          "ApplyServerSideEncryptionByDefault": {
+            "SSEAlgorithm": "AES256"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "IAM",
+    "AccountId": "123456789012",
+    "Region": "global",
+    "UserName": "user-17",
+    "UserId": "AIDA52942EXAMPLE",
+    "CreateDate": "2023-06-04T03:57:49Z",
+    "MFAEnabled": true,
+    "AccessKeys": [
+      {
+        "AccessKeyId": "AKIA596520EXAMPLE",
+        "Status": "Active",
+        "CreateDate": "2021-09-09T11:07:59Z"
+      }
+    ]
+  },
+  {
+    "Type": "RDS",
+    "AccountId": "987654321098",
+    "Region": "ap-southeast-1",
+    "DBInstanceIdentifier": "db-2",
+    "Engine": "mysql",
+    "DBInstanceStatus": "stopped",
+    "PubliclyAccessible": false,
+    "StorageEncrypted": false,
+    "BackupRetentionPeriod": 29,
+    "Endpoint": {
+      "Address": "db3.example.ap-southeast-1.rds.amazonaws.com",
+      "Port": 5432
+    }
+  },
+  {
+    "Type": "SecurityGroup",
+    "AccountId": "987654321098",
+    "Region": "us-west-2",
+    "GroupId": "sg-3282",
+    "GroupName": "sg-8",
+    "IpPermissions": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 22,
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "61.16.239.0/24",
+            "Description": "SSH"
+          }
+        ]
+      },
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 80,
+        "ToPort": 80,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "EC2",
+    "AccountId": "987654321098",
+    "Region": "eu-west-1",
+    "InstanceId": "i-01ebfe18",
+    "InstanceType": "c5.large",
+    "State": "stopped",
+    "PublicIpAddress": "58.51.180.250",
+    "PrivateIpAddress": "84.73.185.224",
+    "IamInstanceProfile": {
+      "Arn": "arn:aws:iam::987654321098:instance-profile/example-role"
+    },
+    "SecurityGroups": [
+      {
+        "GroupId": "sg-3272",
+        "GroupName": "sg-1"
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "ec2-instance-4"
+      }
+    ]
+  },
+  {
+    "Type": "S3",
+    "AccountId": "555666777888",
+    "Region": "us-east-1",
+    "BucketName": "bucket-19",
+    "CreationDate": "2024-02-08T08:48:07Z",
+    "Acl": {
+      "Grants": []
+    },
+    "Encryption": {
+      "Rules": [
+        {
+          "ApplyServerSideEncryptionByDefault": {
+            "SSEAlgorithm": "AES256"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "IAM",
+    "AccountId": "123456789012",
+    "Region": "global",
+    "UserName": "user-3",
+    "UserId": "AIDA38111EXAMPLE",
+    "CreateDate": "2023-02-18T21:53:27Z",
+    "MFAEnabled": true,
+    "AccessKeys": []
+  },
+  {
+    "Type": "RDS",
+    "AccountId": "123456789012",
+    "Region": "us-east-1",
+    "DBInstanceIdentifier": "db-0",
+    "Engine": "postgres",
+    "DBInstanceStatus": "available",
+    "PubliclyAccessible": false,
+    "StorageEncrypted": true,
+    "BackupRetentionPeriod": 8,
+    "Endpoint": {
+      "Address": "db4.example.ap-southeast-1.rds.amazonaws.com",
+      "Port": 5432
+    }
+  },
+  {
+    "Type": "SecurityGroup",
+    "AccountId": "123456789012",
+    "Region": "eu-west-1",
+    "GroupId": "sg-5356",
+    "GroupName": "sg-4",
+    "IpPermissions": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 22,
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "93.153.21.0/24",
+            "Description": "SSH"
+          }
+        ]
+      },
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 80,
+        "ToPort": 80,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "EC2",
+    "AccountId": "555666777888",
+    "Region": "us-west-2",
+    "InstanceId": "i-01ccc1a7",
+    "InstanceType": "t3.small",
+    "State": "running",
+    "PublicIpAddress": "149.145.79.131",
+    "PrivateIpAddress": "224.30.5.87",
+    "IamInstanceProfile": {
+      "Arn": "arn:aws:iam::987654321098:instance-profile/example-role"
+    },
+    "SecurityGroups": [
+      {
+        "GroupId": "sg-3692",
+        "GroupName": "sg-4"
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "ec2-instance-5"
+      }
+    ]
+  },
+  {
+    "Type": "S3",
+    "AccountId": "987654321098",
+    "Region": "us-west-2",
+    "BucketName": "bucket-8",
+    "CreationDate": "2023-02-06T10:32:07Z",
+    "Acl": {
+      "Grants": []
+    },
+    "Encryption": null
+  },
+  {
+    "Type": "IAM",
+    "AccountId": "123456789012",
+    "Region": "global",
+    "UserName": "user-17",
+    "UserId": "AIDA68646EXAMPLE",
+    "CreateDate": "2024-05-21T12:17:23Z",
+    "MFAEnabled": false,
+    "AccessKeys": [
+      {
+        "AccessKeyId": "AKIA578468EXAMPLE",
+        "Status": "Inactive",
+        "CreateDate": "2020-12-28T03:33:31Z"
+      }
+    ]
+  },
+  {
+    "Type": "RDS",
+    "AccountId": "555666777888",
+    "Region": "eu-west-1",
+    "DBInstanceIdentifier": "db-5",
+    "Engine": "postgres",
+    "DBInstanceStatus": "available",
+    "PubliclyAccessible": false,
+    "StorageEncrypted": true,
+    "BackupRetentionPeriod": 17,
+    "Endpoint": {
+      "Address": "db5.example.eu-west-1.rds.amazonaws.com",
+      "Port": 1433
+    }
+  },
+  {
+    "Type": "SecurityGroup",
+    "AccountId": "987654321098",
+    "Region": "ap-southeast-1",
+    "GroupId": "sg-1641",
+    "GroupName": "sg-9",
+    "IpPermissions": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 22,
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "205.216.136.0/24",
+            "Description": "SSH"
+          }
+        ]
+      },
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 80,
+        "ToPort": 80,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "EC2",
+    "AccountId": "987654321098",
+    "Region": "us-east-1",
+    "InstanceId": "i-03117265",
+    "InstanceType": "t3.medium",
+    "State": "stopped",
+    "PublicIpAddress": "25.158.29.228",
+    "PrivateIpAddress": "211.53.173.251",
+    "IamInstanceProfile": null,
+    "SecurityGroups": [
+      {
+        "GroupId": "sg-5183",
+        "GroupName": "sg-7"
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "ec2-instance-6"
+      }
+    ]
+  },
+  {
+    "Type": "S3",
+    "AccountId": "987654321098",
+    "Region": "us-east-1",
+    "BucketName": "bucket-15",
+    "CreationDate": "2025-11-04T02:07:25Z",
+    "Acl": {
+      "Grants": []
+    },
+    "Encryption": {
+      "Rules": [
+        {
+          "ApplyServerSideEncryptionByDefault": {
+            "SSEAlgorithm": "AES256"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "IAM",
+    "AccountId": "987654321098",
+    "Region": "global",
+    "UserName": "user-8",
+    "UserId": "AIDA61534EXAMPLE",
+    "CreateDate": "2025-01-10T23:17:58Z",
+    "MFAEnabled": true,
+    "AccessKeys": [
+      {
+        "AccessKeyId": "AKIA671307EXAMPLE",
+        "Status": "Active",
+        "CreateDate": "2020-10-30T07:01:28Z"
+      }
+    ]
+  },
+  {
+    "Type": "RDS",
+    "AccountId": "987654321098",
+    "Region": "ap-southeast-1",
+    "DBInstanceIdentifier": "db-2",
+    "Engine": "mysql",
+    "DBInstanceStatus": "available",
+    "PubliclyAccessible": false,
+    "StorageEncrypted": true,
+    "BackupRetentionPeriod": 9,
+    "Endpoint": {
+      "Address": "db6.example.us-east-1.rds.amazonaws.com",
+      "Port": 1433
+    }
+  },
+  {
+    "Type": "SecurityGroup",
+    "AccountId": "123456789012",
+    "Region": "us-east-1",
+    "GroupId": "sg-6700",
+    "GroupName": "sg-6",
+    "IpPermissions": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 22,
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "169.213.247.0/24",
+            "Description": "SSH"
+          }
+        ]
+      },
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 80,
+        "ToPort": 80,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "EC2",
+    "AccountId": "123456789012",
+    "Region": "us-east-1",
+    "InstanceId": "i-0250eecb",
+    "InstanceType": "t3.medium",
+    "State": "stopped",
+    "PublicIpAddress": "15.96.235.165",
+    "PrivateIpAddress": "139.35.165.86",
+    "IamInstanceProfile": null,
+    "SecurityGroups": [
+      {
+        "GroupId": "sg-8067",
+        "GroupName": "sg-15"
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "ec2-instance-7"
+      }
+    ]
+  },
+  {
+    "Type": "S3",
+    "AccountId": "555666777888",
+    "Region": "ap-southeast-1",
+    "BucketName": "bucket-14",
+    "CreationDate": "2024-05-17T16:58:16Z",
+    "Acl": {
+      "Grants": []
+    },
+    "Encryption": {
+      "Rules": [
+        {
+          "ApplyServerSideEncryptionByDefault": {
+            "SSEAlgorithm": "AES256"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "IAM",
+    "AccountId": "987654321098",
+    "Region": "global",
+    "UserName": "user-0",
+    "UserId": "AIDA66007EXAMPLE",
+    "CreateDate": "2024-10-16T07:55:04Z",
+    "MFAEnabled": true,
+    "AccessKeys": [
+      {
+        "AccessKeyId": "AKIA764466EXAMPLE",
+        "Status": "Inactive",
+        "CreateDate": "2020-01-11T17:14:32Z"
+      }
+    ]
+  },
+  {
+    "Type": "RDS",
+    "AccountId": "987654321098",
+    "Region": "eu-west-1",
+    "DBInstanceIdentifier": "db-9",
+    "Engine": "postgres",
+    "DBInstanceStatus": "stopped",
+    "PubliclyAccessible": false,
+    "StorageEncrypted": false,
+    "BackupRetentionPeriod": 10,
+    "Endpoint": {
+      "Address": "db7.example.us-east-1.rds.amazonaws.com",
+      "Port": 1433
+    }
+  },
+  {
+    "Type": "SecurityGroup",
+    "AccountId": "987654321098",
+    "Region": "us-east-1",
+    "GroupId": "sg-5723",
+    "GroupName": "sg-11",
+    "IpPermissions": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 22,
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "215.155.249.0/24",
+            "Description": "SSH"
+          }
+        ]
+      },
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 80,
+        "ToPort": 80,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "EC2",
+    "AccountId": "987654321098",
+    "Region": "us-west-2",
+    "InstanceId": "i-04b0a90a",
+    "InstanceType": "t3.medium",
+    "State": "stopped",
+    "PublicIpAddress": "244.17.207.60",
+    "PrivateIpAddress": "170.17.7.162",
+    "IamInstanceProfile": null,
+    "SecurityGroups": [
+      {
+        "GroupId": "sg-7927",
+        "GroupName": "sg-1"
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "ec2-instance-8"
+      }
+    ]
+  },
+  {
+    "Type": "S3",
+    "AccountId": "987654321098",
+    "Region": "eu-west-1",
+    "BucketName": "bucket-15",
+    "CreationDate": "2024-01-23T18:40:17Z",
+    "Acl": {
+      "Grants": []
+    },
+    "Encryption": {
+      "Rules": [
+        {
+          "ApplyServerSideEncryptionByDefault": {
+            "SSEAlgorithm": "AES256"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "IAM",
+    "AccountId": "123456789012",
+    "Region": "global",
+    "UserName": "user-5",
+    "UserId": "AIDA63129EXAMPLE",
+    "CreateDate": "2022-03-06T21:02:32Z",
+    "MFAEnabled": true,
+    "AccessKeys": [
+      {
+        "AccessKeyId": "AKIA618982EXAMPLE",
+        "Status": "Inactive",
+        "CreateDate": "2021-08-09T15:01:03Z"
+      }
+    ]
+  },
+  {
+    "Type": "RDS",
+    "AccountId": "987654321098",
+    "Region": "ap-southeast-1",
+    "DBInstanceIdentifier": "db-3",
+    "Engine": "mysql",
+    "DBInstanceStatus": "stopped",
+    "PubliclyAccessible": false,
+    "StorageEncrypted": true,
+    "BackupRetentionPeriod": 22,
+    "Endpoint": {
+      "Address": "db8.example.eu-west-1.rds.amazonaws.com",
+      "Port": 3306
+    }
+  },
+  {
+    "Type": "SecurityGroup",
+    "AccountId": "987654321098",
+    "Region": "us-west-2",
+    "GroupId": "sg-4270",
+    "GroupName": "sg-19",
+    "IpPermissions": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 22,
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "109.126.178.0/24",
+            "Description": "SSH"
+          }
+        ]
+      },
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 80,
+        "ToPort": 80,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "EC2",
+    "AccountId": "987654321098",
+    "Region": "ap-southeast-1",
+    "InstanceId": "i-0556c5be",
+    "InstanceType": "t3.small",
+    "State": "stopped",
+    "PublicIpAddress": "118.41.142.67",
+    "PrivateIpAddress": "68.162.106.201",
+    "IamInstanceProfile": null,
+    "SecurityGroups": [
+      {
+        "GroupId": "sg-9507",
+        "GroupName": "sg-10"
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "ec2-instance-9"
+      }
+    ]
+  },
+  {
+    "Type": "S3",
+    "AccountId": "555666777888",
+    "Region": "eu-west-1",
+    "BucketName": "bucket-11",
+    "CreationDate": "2025-09-02T13:07:33Z",
+    "Acl": {
+      "Grants": []
+    },
+    "Encryption": {
+      "Rules": [
+        {
+          "ApplyServerSideEncryptionByDefault": {
+            "SSEAlgorithm": "AES256"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "IAM",
+    "AccountId": "555666777888",
+    "Region": "global",
+    "UserName": "user-17",
+    "UserId": "AIDA89642EXAMPLE",
+    "CreateDate": "2024-06-05T00:01:42Z",
+    "MFAEnabled": true,
+    "AccessKeys": [
+      {
+        "AccessKeyId": "AKIA415290EXAMPLE",
+        "Status": "Inactive",
+        "CreateDate": "2022-04-04T08:24:34Z"
+      }
+    ]
+  },
+  {
+    "Type": "RDS",
+    "AccountId": "123456789012",
+    "Region": "ap-southeast-1",
+    "DBInstanceIdentifier": "db-6",
+    "Engine": "mariadb",
+    "DBInstanceStatus": "stopped",
+    "PubliclyAccessible": false,
+    "StorageEncrypted": true,
+    "BackupRetentionPeriod": 17,
+    "Endpoint": {
+      "Address": "db9.example.eu-west-1.rds.amazonaws.com",
+      "Port": 1433
+    }
+  },
+  {
+    "Type": "SecurityGroup",
+    "AccountId": "555666777888",
+    "Region": "us-east-1",
+    "GroupId": "sg-7680",
+    "GroupName": "sg-10",
+    "IpPermissions": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 22,
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "212.178.69.0/24",
+            "Description": "SSH"
+          }
+        ]
+      },
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 80,
+        "ToPort": 80,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "EC2",
+    "AccountId": "555666777888",
+    "Region": "ap-southeast-1",
+    "InstanceId": "i-02247a9e",
+    "InstanceType": "m5.large",
+    "State": "running",
+    "PublicIpAddress": "4.244.23.252",
+    "PrivateIpAddress": "216.183.167.248",
+    "IamInstanceProfile": {
+      "Arn": "arn:aws:iam::555666777888:instance-profile/example-role"
+    },
+    "SecurityGroups": [
+      {
+        "GroupId": "sg-3253",
+        "GroupName": "sg-1"
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "ec2-instance-10"
+      }
+    ]
+  },
+  {
+    "Type": "S3",
+    "AccountId": "987654321098",
+    "Region": "ap-southeast-1",
+    "BucketName": "bucket-5",
+    "CreationDate": "2025-03-31T02:29:59Z",
+    "Acl": {
+      "Grants": []
+    },
+    "Encryption": {
+      "Rules": [
+        {
+          "ApplyServerSideEncryptionByDefault": {
+            "SSEAlgorithm": "AES256"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "IAM",
+    "AccountId": "987654321098",
+    "Region": "global",
+    "UserName": "user-14",
+    "UserId": "AIDA27962EXAMPLE",
+    "CreateDate": "2023-08-18T13:16:23Z",
+    "MFAEnabled": true,
+    "AccessKeys": [
+      {
+        "AccessKeyId": "AKIA837512EXAMPLE",
+        "Status": "Active",
+        "CreateDate": "2021-02-16T01:28:53Z"
+      }
+    ]
+  },
+  {
+    "Type": "RDS",
+    "AccountId": "123456789012",
+    "Region": "us-east-1",
+    "DBInstanceIdentifier": "db-9",
+    "Engine": "postgres",
+    "DBInstanceStatus": "available",
+    "PubliclyAccessible": false,
+    "StorageEncrypted": true,
+    "BackupRetentionPeriod": 20,
+    "Endpoint": {
+      "Address": "db10.example.us-east-1.rds.amazonaws.com",
+      "Port": 1433
+    }
+  },
+  {
+    "Type": "SecurityGroup",
+    "AccountId": "987654321098",
+    "Region": "ap-southeast-1",
+    "GroupId": "sg-6901",
+    "GroupName": "sg-5",
+    "IpPermissions": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 22,
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "30.179.63.0/24",
+            "Description": "SSH"
+          }
+        ]
+      },
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 80,
+        "ToPort": 80,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "EC2",
+    "AccountId": "555666777888",
+    "Region": "us-east-1",
+    "InstanceId": "i-04531bf5",
+    "InstanceType": "t3.small",
+    "State": "stopped",
+    "PublicIpAddress": "254.33.77.237",
+    "PrivateIpAddress": "68.236.242.103",
+    "IamInstanceProfile": null,
+    "SecurityGroups": [
+      {
+        "GroupId": "sg-9603",
+        "GroupName": "sg-16"
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "ec2-instance-11"
+      }
+    ]
+  },
+  {
+    "Type": "S3",
+    "AccountId": "123456789012",
+    "Region": "ap-southeast-1",
+    "BucketName": "bucket-9",
+    "CreationDate": "2022-01-31T20:23:14Z",
+    "Acl": {
+      "Grants": []
+    },
+    "Encryption": null
+  },
+  {
+    "Type": "IAM",
+    "AccountId": "987654321098",
+    "Region": "global",
+    "UserName": "user-15",
+    "UserId": "AIDA17683EXAMPLE",
+    "CreateDate": "2022-05-17T00:26:23Z",
+    "MFAEnabled": true,
+    "AccessKeys": [
+      {
+        "AccessKeyId": "AKIA216222EXAMPLE",
+        "Status": "Inactive",
+        "CreateDate": "2020-01-24T12:28:38Z"
+      }
+    ]
+  },
+  {
+    "Type": "RDS",
+    "AccountId": "123456789012",
+    "Region": "eu-west-1",
+    "DBInstanceIdentifier": "db-8",
+    "Engine": "postgres",
+    "DBInstanceStatus": "stopped",
+    "PubliclyAccessible": false,
+    "StorageEncrypted": true,
+    "BackupRetentionPeriod": 8,
+    "Endpoint": {
+      "Address": "db11.example.eu-west-1.rds.amazonaws.com",
+      "Port": 1433
+    }
+  },
+  {
+    "Type": "SecurityGroup",
+    "AccountId": "987654321098",
+    "Region": "us-east-1",
+    "GroupId": "sg-6120",
+    "GroupName": "sg-8",
+    "IpPermissions": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 22,
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "135.17.158.0/24",
+            "Description": "SSH"
+          }
+        ]
+      },
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 80,
+        "ToPort": 80,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "EC2",
+    "AccountId": "123456789012",
+    "Region": "eu-west-1",
+    "InstanceId": "i-02278e4a",
+    "InstanceType": "c5.large",
+    "State": "stopped",
+    "PublicIpAddress": "217.144.160.135",
+    "PrivateIpAddress": "69.208.26.144",
+    "IamInstanceProfile": {
+      "Arn": "arn:aws:iam::555666777888:instance-profile/example-role"
+    },
+    "SecurityGroups": [
+      {
+        "GroupId": "sg-9105",
+        "GroupName": "sg-10"
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "ec2-instance-12"
+      }
+    ]
+  },
+  {
+    "Type": "S3",
+    "AccountId": "123456789012",
+    "Region": "us-west-2",
+    "BucketName": "bucket-7",
+    "CreationDate": "2025-06-27T17:13:44Z",
+    "Acl": {
+      "Grants": []
+    },
+    "Encryption": null
+  },
+  {
+    "Type": "IAM",
+    "AccountId": "987654321098",
+    "Region": "global",
+    "UserName": "user-1",
+    "UserId": "AIDA67285EXAMPLE",
+    "CreateDate": "2021-05-11T13:54:02Z",
+    "MFAEnabled": true,
+    "AccessKeys": [
+      {
+        "AccessKeyId": "AKIA153667EXAMPLE",
+        "Status": "Active",
+        "CreateDate": "2021-05-10T11:36:40Z"
+      }
+    ]
+  },
+  {
+    "Type": "RDS",
+    "AccountId": "123456789012",
+    "Region": "ap-southeast-1",
+    "DBInstanceIdentifier": "db-3",
+    "Engine": "mysql",
+    "DBInstanceStatus": "stopped",
+    "PubliclyAccessible": false,
+    "StorageEncrypted": true,
+    "BackupRetentionPeriod": 16,
+    "Endpoint": {
+      "Address": "db12.example.us-east-1.rds.amazonaws.com",
+      "Port": 1433
+    }
+  },
+  {
+    "Type": "SecurityGroup",
+    "AccountId": "123456789012",
+    "Region": "us-west-2",
+    "GroupId": "sg-8580",
+    "GroupName": "sg-1",
+    "IpPermissions": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 22,
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "65.55.206.0/24",
+            "Description": "SSH"
+          }
+        ]
+      },
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 80,
+        "ToPort": 80,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "EC2",
+    "AccountId": "123456789012",
+    "Region": "us-east-1",
+    "InstanceId": "i-0102435c",
+    "InstanceType": "t3.small",
+    "State": "running",
+    "PublicIpAddress": "45.80.113.53",
+    "PrivateIpAddress": "171.84.146.233",
+    "IamInstanceProfile": {
+      "Arn": "arn:aws:iam::123456789012:instance-profile/example-role"
+    },
+    "SecurityGroups": [
+      {
+        "GroupId": "sg-7764",
+        "GroupName": "sg-5"
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "ec2-instance-13"
+      }
+    ]
+  },
+  {
+    "Type": "S3",
+    "AccountId": "987654321098",
+    "Region": "ap-southeast-1",
+    "BucketName": "bucket-9",
+    "CreationDate": "2024-04-04T23:06:40Z",
+    "Acl": {
+      "Grants": [
+        {
+          "Grantee": {
+            "Type": "Group",
+            "URI": "http://acs.amazonaws.com/groups/global/AllUsers"
+          },
+          "Permission": "READ"
+        }
+      ]
+    },
+    "Encryption": null
+  },
+  {
+    "Type": "IAM",
+    "AccountId": "555666777888",
+    "Region": "global",
+    "UserName": "user-15",
+    "UserId": "AIDA76973EXAMPLE",
+    "CreateDate": "2021-12-28T00:37:54Z",
+    "MFAEnabled": false,
+    "AccessKeys": [
+      {
+        "AccessKeyId": "AKIA782575EXAMPLE",
+        "Status": "Active",
+        "CreateDate": "2023-11-02T02:08:35Z"
+      }
+    ]
+  },
+  {
+    "Type": "RDS",
+    "AccountId": "555666777888",
+    "Region": "ap-southeast-1",
+    "DBInstanceIdentifier": "db-9",
+    "Engine": "mariadb",
+    "DBInstanceStatus": "available",
+    "PubliclyAccessible": false,
+    "StorageEncrypted": true,
+    "BackupRetentionPeriod": 7,
+    "Endpoint": {
+      "Address": "db13.example.ap-southeast-1.rds.amazonaws.com",
+      "Port": 5432
+    }
+  },
+  {
+    "Type": "SecurityGroup",
+    "AccountId": "555666777888",
+    "Region": "us-west-2",
+    "GroupId": "sg-5730",
+    "GroupName": "sg-10",
+    "IpPermissions": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 22,
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "246.22.203.0/24",
+            "Description": "SSH"
+          }
+        ]
+      },
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 80,
+        "ToPort": 80,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "EC2",
+    "AccountId": "123456789012",
+    "Region": "eu-west-1",
+    "InstanceId": "i-046c4738",
+    "InstanceType": "c5.large",
+    "State": "running",
+    "PublicIpAddress": "162.237.10.12",
+    "PrivateIpAddress": "151.174.48.93",
+    "IamInstanceProfile": {
+      "Arn": "arn:aws:iam::987654321098:instance-profile/example-role"
+    },
+    "SecurityGroups": [
+      {
+        "GroupId": "sg-8489",
+        "GroupName": "sg-17"
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "ec2-instance-14"
+      }
+    ]
+  },
+  {
+    "Type": "S3",
+    "AccountId": "123456789012",
+    "Region": "eu-west-1",
+    "BucketName": "bucket-18",
+    "CreationDate": "2024-02-20T10:05:04Z",
+    "Acl": {
+      "Grants": []
+    },
+    "Encryption": {
+      "Rules": [
+        {
+          "ApplyServerSideEncryptionByDefault": {
+            "SSEAlgorithm": "AES256"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "IAM",
+    "AccountId": "555666777888",
+    "Region": "global",
+    "UserName": "user-11",
+    "UserId": "AIDA24842EXAMPLE",
+    "CreateDate": "2021-01-03T07:19:49Z",
+    "MFAEnabled": true,
+    "AccessKeys": [
+      {
+        "AccessKeyId": "AKIA756250EXAMPLE",
+        "Status": "Active",
+        "CreateDate": "2020-10-26T06:30:01Z"
+      }
+    ]
+  },
+  {
+    "Type": "RDS",
+    "AccountId": "123456789012",
+    "Region": "eu-west-1",
+    "DBInstanceIdentifier": "db-0",
+    "Engine": "mysql",
+    "DBInstanceStatus": "stopped",
+    "PubliclyAccessible": true,
+    "StorageEncrypted": true,
+    "BackupRetentionPeriod": 18,
+    "Endpoint": {
+      "Address": "db14.example.us-east-1.rds.amazonaws.com",
+      "Port": 1433
+    }
+  },
+  {
+    "Type": "SecurityGroup",
+    "AccountId": "987654321098",
+    "Region": "us-east-1",
+    "GroupId": "sg-3515",
+    "GroupName": "sg-18",
+    "IpPermissions": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 22,
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "15.90.172.0/24",
+            "Description": "SSH"
+          }
+        ]
+      },
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 80,
+        "ToPort": 80,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "EC2",
+    "AccountId": "555666777888",
+    "Region": "eu-west-1",
+    "InstanceId": "i-03139e0a",
+    "InstanceType": "t3.small",
+    "State": "running",
+    "PublicIpAddress": "206.160.245.117",
+    "PrivateIpAddress": "108.208.241.149",
+    "IamInstanceProfile": {
+      "Arn": "arn:aws:iam::987654321098:instance-profile/example-role"
+    },
+    "SecurityGroups": [
+      {
+        "GroupId": "sg-5774",
+        "GroupName": "sg-18"
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "ec2-instance-15"
+      }
+    ]
+  },
+  {
+    "Type": "S3",
+    "AccountId": "555666777888",
+    "Region": "eu-west-1",
+    "BucketName": "bucket-17",
+    "CreationDate": "2024-06-30T16:47:16Z",
+    "Acl": {
+      "Grants": []
+    },
+    "Encryption": {
+      "Rules": [
+        {
+          "ApplyServerSideEncryptionByDefault": {
+            "SSEAlgorithm": "AES256"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "IAM",
+    "AccountId": "123456789012",
+    "Region": "global",
+    "UserName": "user-19",
+    "UserId": "AIDA32536EXAMPLE",
+    "CreateDate": "2024-07-03T06:04:04Z",
+    "MFAEnabled": true,
+    "AccessKeys": [
+      {
+        "AccessKeyId": "AKIA650697EXAMPLE",
+        "Status": "Inactive",
+        "CreateDate": "2020-03-30T06:06:01Z"
+      }
+    ]
+  },
+  {
+    "Type": "RDS",
+    "AccountId": "555666777888",
+    "Region": "us-east-1",
+    "DBInstanceIdentifier": "db-5",
+    "Engine": "mariadb",
+    "DBInstanceStatus": "available",
+    "PubliclyAccessible": false,
+    "StorageEncrypted": false,
+    "BackupRetentionPeriod": 30,
+    "Endpoint": {
+      "Address": "db15.example.eu-west-1.rds.amazonaws.com",
+      "Port": 1433
+    }
+  },
+  {
+    "Type": "SecurityGroup",
+    "AccountId": "123456789012",
+    "Region": "ap-southeast-1",
+    "GroupId": "sg-9028",
+    "GroupName": "sg-15",
+    "IpPermissions": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 22,
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "101.2.62.0/24",
+            "Description": "SSH"
+          }
+        ]
+      },
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 80,
+        "ToPort": 80,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "EC2",
+    "AccountId": "555666777888",
+    "Region": "us-east-1",
+    "InstanceId": "i-00c355d6",
+    "InstanceType": "t3.medium",
+    "State": "running",
+    "PublicIpAddress": "31.73.176.51",
+    "PrivateIpAddress": "236.14.64.112",
+    "IamInstanceProfile": {
+      "Arn": "arn:aws:iam::123456789012:instance-profile/example-role"
+    },
+    "SecurityGroups": [
+      {
+        "GroupId": "sg-4633",
+        "GroupName": "sg-19"
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "ec2-instance-16"
+      }
+    ]
+  },
+  {
+    "Type": "S3",
+    "AccountId": "555666777888",
+    "Region": "eu-west-1",
+    "BucketName": "bucket-13",
+    "CreationDate": "2023-11-02T08:31:53Z",
+    "Acl": {
+      "Grants": []
+    },
+    "Encryption": {
+      "Rules": [
+        {
+          "ApplyServerSideEncryptionByDefault": {
+            "SSEAlgorithm": "AES256"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "IAM",
+    "AccountId": "987654321098",
+    "Region": "global",
+    "UserName": "user-3",
+    "UserId": "AIDA15289EXAMPLE",
+    "CreateDate": "2020-02-20T23:00:21Z",
+    "MFAEnabled": false,
+    "AccessKeys": [
+      {
+        "AccessKeyId": "AKIA615356EXAMPLE",
+        "Status": "Active",
+        "CreateDate": "2021-11-07T18:20:23Z"
+      }
+    ]
+  },
+  {
+    "Type": "RDS",
+    "AccountId": "987654321098",
+    "Region": "ap-southeast-1",
+    "DBInstanceIdentifier": "db-7",
+    "Engine": "postgres",
+    "DBInstanceStatus": "stopped",
+    "PubliclyAccessible": false,
+    "StorageEncrypted": true,
+    "BackupRetentionPeriod": 16,
+    "Endpoint": {
+      "Address": "db16.example.us-east-1.rds.amazonaws.com",
+      "Port": 5432
+    }
+  },
+  {
+    "Type": "SecurityGroup",
+    "AccountId": "987654321098",
+    "Region": "ap-southeast-1",
+    "GroupId": "sg-3159",
+    "GroupName": "sg-0",
+    "IpPermissions": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 22,
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "71.42.105.0/24",
+            "Description": "SSH"
+          }
+        ]
+      },
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 80,
+        "ToPort": 80,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "EC2",
+    "AccountId": "555666777888",
+    "Region": "us-west-2",
+    "InstanceId": "i-03f141da",
+    "InstanceType": "c5.large",
+    "State": "stopped",
+    "PublicIpAddress": "87.222.87.95",
+    "PrivateIpAddress": "245.145.77.136",
+    "IamInstanceProfile": {
+      "Arn": "arn:aws:iam::987654321098:instance-profile/example-role"
+    },
+    "SecurityGroups": [
+      {
+        "GroupId": "sg-5065",
+        "GroupName": "sg-17"
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "ec2-instance-17"
+      }
+    ]
+  },
+  {
+    "Type": "S3",
+    "AccountId": "987654321098",
+    "Region": "ap-southeast-1",
+    "BucketName": "bucket-11",
+    "CreationDate": "2023-03-09T17:31:53Z",
+    "Acl": {
+      "Grants": []
+    },
+    "Encryption": {
+      "Rules": [
+        {
+          "ApplyServerSideEncryptionByDefault": {
+            "SSEAlgorithm": "AES256"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "IAM",
+    "AccountId": "123456789012",
+    "Region": "global",
+    "UserName": "user-16",
+    "UserId": "AIDA46165EXAMPLE",
+    "CreateDate": "2024-05-08T02:26:00Z",
+    "MFAEnabled": true,
+    "AccessKeys": [
+      {
+        "AccessKeyId": "AKIA435283EXAMPLE",
+        "Status": "Active",
+        "CreateDate": "2022-10-30T10:57:22Z"
+      }
+    ]
+  },
+  {
+    "Type": "RDS",
+    "AccountId": "123456789012",
+    "Region": "ap-southeast-1",
+    "DBInstanceIdentifier": "db-3",
+    "Engine": "mariadb",
+    "DBInstanceStatus": "available",
+    "PubliclyAccessible": true,
+    "StorageEncrypted": true,
+    "BackupRetentionPeriod": 24,
+    "Endpoint": {
+      "Address": "db17.example.us-east-1.rds.amazonaws.com",
+      "Port": 5432
+    }
+  },
+  {
+    "Type": "SecurityGroup",
+    "AccountId": "555666777888",
+    "Region": "us-east-1",
+    "GroupId": "sg-2008",
+    "GroupName": "sg-8",
+    "IpPermissions": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 22,
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "218.241.23.0/24",
+            "Description": "SSH"
+          }
+        ]
+      },
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 80,
+        "ToPort": 80,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "EC2",
+    "AccountId": "123456789012",
+    "Region": "us-west-2",
+    "InstanceId": "i-04fcc899",
+    "InstanceType": "t3.small",
+    "State": "running",
+    "PublicIpAddress": "170.36.207.229",
+    "PrivateIpAddress": "163.50.231.193",
+    "IamInstanceProfile": null,
+    "SecurityGroups": [
+      {
+        "GroupId": "sg-5241",
+        "GroupName": "sg-15"
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "ec2-instance-18"
+      }
+    ]
+  },
+  {
+    "Type": "S3",
+    "AccountId": "987654321098",
+    "Region": "eu-west-1",
+    "BucketName": "bucket-11",
+    "CreationDate": "2025-04-24T12:28:36Z",
+    "Acl": {
+      "Grants": []
+    },
+    "Encryption": null
+  },
+  {
+    "Type": "IAM",
+    "AccountId": "123456789012",
+    "Region": "global",
+    "UserName": "user-9",
+    "UserId": "AIDA70885EXAMPLE",
+    "CreateDate": "2023-08-02T22:02:47Z",
+    "MFAEnabled": true,
+    "AccessKeys": [
+      {
+        "AccessKeyId": "AKIA635428EXAMPLE",
+        "Status": "Inactive",
+        "CreateDate": "2023-05-26T21:26:07Z"
+      }
+    ]
+  },
+  {
+    "Type": "RDS",
+    "AccountId": "555666777888",
+    "Region": "eu-west-1",
+    "DBInstanceIdentifier": "db-2",
+    "Engine": "postgres",
+    "DBInstanceStatus": "available",
+    "PubliclyAccessible": true,
+    "StorageEncrypted": false,
+    "BackupRetentionPeriod": 26,
+    "Endpoint": {
+      "Address": "db18.example.ap-southeast-1.rds.amazonaws.com",
+      "Port": 5432
+    }
+  },
+  {
+    "Type": "SecurityGroup",
+    "AccountId": "987654321098",
+    "Region": "us-west-2",
+    "GroupId": "sg-9165",
+    "GroupName": "sg-7",
+    "IpPermissions": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 22,
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "226.3.16.0/24",
+            "Description": "SSH"
+          }
+        ]
+      },
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 80,
+        "ToPort": 80,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "EC2",
+    "AccountId": "555666777888",
+    "Region": "us-east-1",
+    "InstanceId": "i-047fbfbc",
+    "InstanceType": "t3.small",
+    "State": "running",
+    "PublicIpAddress": "161.4.107.194",
+    "PrivateIpAddress": "154.29.68.147",
+    "IamInstanceProfile": {
+      "Arn": "arn:aws:iam::555666777888:instance-profile/example-role"
+    },
+    "SecurityGroups": [
+      {
+        "GroupId": "sg-4046",
+        "GroupName": "sg-12"
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "ec2-instance-19"
+      }
+    ]
+  },
+  {
+    "Type": "S3",
+    "AccountId": "987654321098",
+    "Region": "eu-west-1",
+    "BucketName": "bucket-3",
+    "CreationDate": "2023-01-04T01:48:33Z",
+    "Acl": {
+      "Grants": [
+        {
+          "Grantee": {
+            "Type": "Group",
+            "URI": "http://acs.amazonaws.com/groups/global/AllUsers"
+          },
+          "Permission": "READ"
+        }
+      ]
+    },
+    "Encryption": {
+      "Rules": [
+        {
+          "ApplyServerSideEncryptionByDefault": {
+            "SSEAlgorithm": "AES256"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "IAM",
+    "AccountId": "987654321098",
+    "Region": "global",
+    "UserName": "user-3",
+    "UserId": "AIDA85075EXAMPLE",
+    "CreateDate": "2022-05-22T13:57:14Z",
+    "MFAEnabled": false,
+    "AccessKeys": [
+      {
+        "AccessKeyId": "AKIA543311EXAMPLE",
+        "Status": "Active",
+        "CreateDate": "2023-12-10T12:03:43Z"
+      }
+    ]
+  },
+  {
+    "Type": "RDS",
+    "AccountId": "123456789012",
+    "Region": "us-west-2",
+    "DBInstanceIdentifier": "db-1",
+    "Engine": "mysql",
+    "DBInstanceStatus": "stopped",
+    "PubliclyAccessible": false,
+    "StorageEncrypted": false,
+    "BackupRetentionPeriod": 1,
+    "Endpoint": {
+      "Address": "db19.example.ap-southeast-1.rds.amazonaws.com",
+      "Port": 5432
+    }
+  },
+  {
+    "Type": "SecurityGroup",
+    "AccountId": "555666777888",
+    "Region": "us-west-2",
+    "GroupId": "sg-7810",
+    "GroupName": "sg-12",
+    "IpPermissions": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 22,
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "105.11.46.0/24",
+            "Description": "SSH"
+          }
+        ]
+      },
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 80,
+        "ToPort": 80,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "EC2",
+    "AccountId": "987654321098",
+    "Region": "us-west-2",
+    "InstanceId": "i-0098f797",
+    "InstanceType": "t3.medium",
+    "State": "stopped",
+    "PublicIpAddress": "83.193.241.99",
+    "PrivateIpAddress": "39.198.238.87",
+    "IamInstanceProfile": null,
+    "SecurityGroups": [
+      {
+        "GroupId": "sg-5653",
+        "GroupName": "sg-2"
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "ec2-instance-20"
+      }
+    ]
+  },
+  {
+    "Type": "S3",
+    "AccountId": "987654321098",
+    "Region": "us-west-2",
+    "BucketName": "bucket-17",
+    "CreationDate": "2023-11-07T18:25:25Z",
+    "Acl": {
+      "Grants": []
+    },
+    "Encryption": {
+      "Rules": [
+        {
+          "ApplyServerSideEncryptionByDefault": {
+            "SSEAlgorithm": "AES256"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "IAM",
+    "AccountId": "555666777888",
+    "Region": "global",
+    "UserName": "user-3",
+    "UserId": "AIDA72401EXAMPLE",
+    "CreateDate": "2021-08-05T03:39:12Z",
+    "MFAEnabled": true,
+    "AccessKeys": [
+      {
+        "AccessKeyId": "AKIA283393EXAMPLE",
+        "Status": "Inactive",
+        "CreateDate": "2024-09-20T17:48:30Z"
+      }
+    ]
+  },
+  {
+    "Type": "RDS",
+    "AccountId": "555666777888",
+    "Region": "us-east-1",
+    "DBInstanceIdentifier": "db-2",
+    "Engine": "mariadb",
+    "DBInstanceStatus": "stopped",
+    "PubliclyAccessible": true,
+    "StorageEncrypted": true,
+    "BackupRetentionPeriod": 23,
+    "Endpoint": {
+      "Address": "db20.example.us-east-1.rds.amazonaws.com",
+      "Port": 3306
+    }
+  },
+  {
+    "Type": "SecurityGroup",
+    "AccountId": "123456789012",
+    "Region": "eu-west-1",
+    "GroupId": "sg-4711",
+    "GroupName": "sg-11",
+    "IpPermissions": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 22,
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "67.241.107.0/24",
+            "Description": "SSH"
+          }
+        ]
+      },
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 80,
+        "ToPort": 80,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "EC2",
+    "AccountId": "555666777888",
+    "Region": "us-west-2",
+    "InstanceId": "i-0555d150",
+    "InstanceType": "c5.large",
+    "State": "running",
+    "PublicIpAddress": "196.225.159.145",
+    "PrivateIpAddress": "250.48.174.224",
+    "IamInstanceProfile": {
+      "Arn": "arn:aws:iam::123456789012:instance-profile/example-role"
+    },
+    "SecurityGroups": [
+      {
+        "GroupId": "sg-2746",
+        "GroupName": "sg-1"
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "ec2-instance-21"
+      }
+    ]
+  },
+  {
+    "Type": "S3",
+    "AccountId": "555666777888",
+    "Region": "us-west-2",
+    "BucketName": "bucket-3",
+    "CreationDate": "2024-08-28T13:54:55Z",
+    "Acl": {
+      "Grants": [
+        {
+          "Grantee": {
+            "Type": "Group",
+            "URI": "http://acs.amazonaws.com/groups/global/AllUsers"
+          },
+          "Permission": "READ"
+        }
+      ]
+    },
+    "Encryption": {
+      "Rules": [
+        {
+          "ApplyServerSideEncryptionByDefault": {
+            "SSEAlgorithm": "AES256"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "IAM",
+    "AccountId": "987654321098",
+    "Region": "global",
+    "UserName": "user-8",
+    "UserId": "AIDA39846EXAMPLE",
+    "CreateDate": "2022-12-17T14:23:38Z",
+    "MFAEnabled": false,
+    "AccessKeys": [
+      {
+        "AccessKeyId": "AKIA763892EXAMPLE",
+        "Status": "Inactive",
+        "CreateDate": "2020-02-11T01:21:41Z"
+      }
+    ]
+  },
+  {
+    "Type": "RDS",
+    "AccountId": "555666777888",
+    "Region": "us-east-1",
+    "DBInstanceIdentifier": "db-3",
+    "Engine": "postgres",
+    "DBInstanceStatus": "available",
+    "PubliclyAccessible": false,
+    "StorageEncrypted": true,
+    "BackupRetentionPeriod": 4,
+    "Endpoint": {
+      "Address": "db21.example.us-east-1.rds.amazonaws.com",
+      "Port": 3306
+    }
+  },
+  {
+    "Type": "SecurityGroup",
+    "AccountId": "987654321098",
+    "Region": "eu-west-1",
+    "GroupId": "sg-4781",
+    "GroupName": "sg-18",
+    "IpPermissions": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 22,
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "118.229.69.0/24",
+            "Description": "SSH"
+          }
+        ]
+      },
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 80,
+        "ToPort": 80,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "EC2",
+    "AccountId": "987654321098",
+    "Region": "us-east-1",
+    "InstanceId": "i-05b137af",
+    "InstanceType": "t3.small",
+    "State": "running",
+    "PublicIpAddress": "92.73.191.90",
+    "PrivateIpAddress": "74.114.32.120",
+    "IamInstanceProfile": {
+      "Arn": "arn:aws:iam::987654321098:instance-profile/example-role"
+    },
+    "SecurityGroups": [
+      {
+        "GroupId": "sg-7908",
+        "GroupName": "sg-6"
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "ec2-instance-22"
+      }
+    ]
+  },
+  {
+    "Type": "S3",
+    "AccountId": "555666777888",
+    "Region": "eu-west-1",
+    "BucketName": "bucket-5",
+    "CreationDate": "2023-02-04T08:40:33Z",
+    "Acl": {
+      "Grants": []
+    },
+    "Encryption": {
+      "Rules": [
+        {
+          "ApplyServerSideEncryptionByDefault": {
+            "SSEAlgorithm": "AES256"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "IAM",
+    "AccountId": "987654321098",
+    "Region": "global",
+    "UserName": "user-14",
+    "UserId": "AIDA47912EXAMPLE",
+    "CreateDate": "2022-12-21T13:46:52Z",
+    "MFAEnabled": false,
+    "AccessKeys": [
+      {
+        "AccessKeyId": "AKIA211186EXAMPLE",
+        "Status": "Inactive",
+        "CreateDate": "2020-10-02T04:35:54Z"
+      }
+    ]
+  },
+  {
+    "Type": "RDS",
+    "AccountId": "987654321098",
+    "Region": "us-east-1",
+    "DBInstanceIdentifier": "db-5",
+    "Engine": "postgres",
+    "DBInstanceStatus": "stopped",
+    "PubliclyAccessible": true,
+    "StorageEncrypted": true,
+    "BackupRetentionPeriod": 7,
+    "Endpoint": {
+      "Address": "db22.example.ap-southeast-1.rds.amazonaws.com",
+      "Port": 3306
+    }
+  },
+  {
+    "Type": "SecurityGroup",
+    "AccountId": "123456789012",
+    "Region": "us-west-2",
+    "GroupId": "sg-3116",
+    "GroupName": "sg-11",
+    "IpPermissions": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 22,
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "174.89.40.0/24",
+            "Description": "SSH"
+          }
+        ]
+      },
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 80,
+        "ToPort": 80,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "EC2",
+    "AccountId": "987654321098",
+    "Region": "us-west-2",
+    "InstanceId": "i-022a32d1",
+    "InstanceType": "t3.medium",
+    "State": "stopped",
+    "PublicIpAddress": "217.165.166.168",
+    "PrivateIpAddress": "223.254.42.7",
+    "IamInstanceProfile": null,
+    "SecurityGroups": [
+      {
+        "GroupId": "sg-7297",
+        "GroupName": "sg-10"
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "ec2-instance-23"
+      }
+    ]
+  },
+  {
+    "Type": "S3",
+    "AccountId": "987654321098",
+    "Region": "eu-west-1",
+    "BucketName": "bucket-14",
+    "CreationDate": "2025-10-29T04:18:57Z",
+    "Acl": {
+      "Grants": []
+    },
+    "Encryption": {
+      "Rules": [
+        {
+          "ApplyServerSideEncryptionByDefault": {
+            "SSEAlgorithm": "AES256"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "IAM",
+    "AccountId": "123456789012",
+    "Region": "global",
+    "UserName": "user-8",
+    "UserId": "AIDA48096EXAMPLE",
+    "CreateDate": "2025-09-24T05:23:10Z",
+    "MFAEnabled": false,
+    "AccessKeys": [
+      {
+        "AccessKeyId": "AKIA661534EXAMPLE",
+        "Status": "Inactive",
+        "CreateDate": "2025-01-19T21:31:53Z"
+      }
+    ]
+  },
+  {
+    "Type": "RDS",
+    "AccountId": "987654321098",
+    "Region": "eu-west-1",
+    "DBInstanceIdentifier": "db-1",
+    "Engine": "mariadb",
+    "DBInstanceStatus": "stopped",
+    "PubliclyAccessible": true,
+    "StorageEncrypted": true,
+    "BackupRetentionPeriod": 17,
+    "Endpoint": {
+      "Address": "db23.example.eu-west-1.rds.amazonaws.com",
+      "Port": 1433
+    }
+  },
+  {
+    "Type": "SecurityGroup",
+    "AccountId": "987654321098",
+    "Region": "us-east-1",
+    "GroupId": "sg-2130",
+    "GroupName": "sg-19",
+    "IpPermissions": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 22,
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "216.220.54.0/24",
+            "Description": "SSH"
+          }
+        ]
+      },
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 80,
+        "ToPort": 80,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Type": "EC2",
+    "AccountId": "555666777888",
+    "Region": "eu-west-1",
+    "InstanceId": "i-0397d5d9",
+    "InstanceType": "t3.medium",
+    "State": "stopped",
+    "PublicIpAddress": "97.6.202.29",
+    "PrivateIpAddress": "153.44.141.156",
+    "IamInstanceProfile": {
+      "Arn": "arn:aws:iam::123456789012:instance-profile/example-role"
+    },
+    "SecurityGroups": [
+      {
+        "GroupId": "sg-2081",
+        "GroupName": "sg-9"
+      }
+    ],
+    "Tags": [
+      {
+        "Key": "Name",
+        "Value": "ec2-instance-24"
+      }
+    ]
+  },
+  {
+    "Type": "S3",
+    "AccountId": "123456789012",
+    "Region": "us-east-1",
+    "BucketName": "bucket-1",
+    "CreationDate": "2024-08-09T09:34:26Z",
+    "Acl": {
+      "Grants": []
+    },
+    "Encryption": null
+  },
+  {
+    "Type": "IAM",
+    "AccountId": "987654321098",
+    "Region": "global",
+    "UserName": "user-17",
+    "UserId": "AIDA45885EXAMPLE",
+    "CreateDate": "2020-05-18T08:14:12Z",
+    "MFAEnabled": false,
+    "AccessKeys": [
+      {
+        "AccessKeyId": "AKIA152438EXAMPLE",
+        "Status": "Inactive",
+        "CreateDate": "2023-12-06T09:12:09Z"
+      }
+    ]
+  },
+  {
+    "Type": "RDS",
+    "AccountId": "555666777888",
+    "Region": "eu-west-1",
+    "DBInstanceIdentifier": "db-9",
+    "Engine": "mariadb",
+    "DBInstanceStatus": "available",
+    "PubliclyAccessible": true,
+    "StorageEncrypted": false,
+    "BackupRetentionPeriod": 4,
+    "Endpoint": {
+      "Address": "db24.example.ap-southeast-1.rds.amazonaws.com",
+      "Port": 3306
+    }
+  },
+  {
+    "Type": "SecurityGroup",
+    "AccountId": "987654321098",
+    "Region": "eu-west-1",
+    "GroupId": "sg-6702",
+    "GroupName": "sg-0",
+    "IpPermissions": [
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 22,
+        "ToPort": 22,
+        "IpRanges": [
+          {
+            "CidrIp": "138.249.240.0/24",
+            "Description": "SSH"
+          }
+        ]
+      },
+      {
+        "IpProtocol": "tcp",
+        "FromPort": 80,
+        "ToPort": 80,
+        "IpRanges": [
+          {
+            "CidrIp": "0.0.0.0/0"
+          }
+        ]
+      }
+    ]
+  }
+]
