@@ -5,6 +5,18 @@ def ec2_ip_check(ec2_instance) :
     public_ip = ec2_instance.get('PublicIpAddress')
     if public_ip:
         ec2_instance['PubliclyExposed'] = True
-        print(f"Instance {ec2_instance.get('InstanceId')} is publicly exposed with IP {public_ip}."f"Please review and configure the security groups carefully to avoid unintended exposure.")
+        print(f"🚨 Instance {ec2_instance.get('InstanceId')} is publicly exposed with IP {public_ip}."f"Please review and configure the security groups carefully to avoid unintended exposure.")
     else:
         ec2_instance['PubliclyExposed'] = False
+
+def ec2_open_ports_check(ec2_instance):
+    """
+    """
+    ipPermissions = ec2_instance.get('IpPermissions')
+    for permissionRule in ipPermissions:
+        ip_ranges = permissionRule.get('IpRanges')
+        for range in ip_ranges:
+            if range.get('CidrIp') == "0.0.0.0/0":
+                print( f"🚨 EC2 instance {ec2_instance.get('InstanceId')} has security group {ec2_instance.get('GroupId')} "
+                                    f"exposing port {permissionRule.get('FromPort')}-{permissionRule.get('ToPort')} to the entire internet (0.0.0.0/0). "
+                                    f"Please restrict the CIDR range.")

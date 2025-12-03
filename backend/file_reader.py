@@ -1,5 +1,5 @@
 import json
-from ec2_scanner import ec2_ip_check
+from ec2_scanner import ec2_ip_check, ec2_open_ports_check
 from collections import defaultdict
 
 # Path to mock AWS data
@@ -25,11 +25,14 @@ def start_ec2_scanner():
 
    
     for account_id in account_ids:
-        print(f"\n--- Scanning EC2 instances for Account: {account_id} ---")
+        print('-----------------------------------------')
+        print(f"\n 🔍 Scanning EC2 instances for Account: {account_id}: \n")
         for resource in grouped_data[account_id]:
             if resource.get("Type") == "EC2":
-                print(f"Scanning EC2: {resource.get('InstanceId')}")
                 ec2_ip_check(resource)  
+            if resource.get("Type") == "SecurityGroup":
+                ec2_open_ports_check(resource)
+            
 
 if __name__ == "__main__":
     start_ec2_scanner()
