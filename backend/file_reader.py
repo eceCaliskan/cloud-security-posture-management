@@ -1,5 +1,5 @@
 import json
-from ec2_scanner import ec2_ip_check, ec2_open_ports_check
+from ec2_scanner import ec2_ip_check, ec2_open_ports_check, mfa_check
 from collections import defaultdict
 
 # Path to mock AWS data
@@ -32,6 +32,8 @@ def start_ec2_scanner():
                 ec2_ip_check(resource)  
             if resource.get("Type") == "SecurityGroup":
                 ec2_open_ports_check(resource)
+            if resource.get("Type") == "IAM":
+                mfa_check(resource)
             
 
 if __name__ == "__main__":
