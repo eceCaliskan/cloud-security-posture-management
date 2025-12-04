@@ -1,3 +1,4 @@
+from datetime import datetime
 def ec2_ip_check(ec2_instance) :
     """
     Check if the the IP adress is exposed publicly. If so retun a warning message.
@@ -30,3 +31,16 @@ def mfa_check(ec2_instance):
     if isMFAenabled == False:
         print(f"🚨 IAM User '{ec2_instance.get('UserName')} - {ec2_instance.get('UserId')}' does not have MFA enabled.")
     
+def active_key_duration_check(ec2_instance):
+    """
+    Check if the key is active more than 90 days
+    """
+    accessKeys = ec2_instance.get('AccessKeys')
+    for accessKey in accessKeys:
+        if accessKey.get('Status') == 'Active':
+            date_now = datetime.now()
+            date_access_key_generated = datetime.strptime(accessKey.get('CreateDate'), "%Y-%m-%dT%H:%M:%SZ")
+            if ((date_now - date_access_key_generated).total_seconds() / (24 * 3600)) > 90:
+                print(f"🚨 IAM User '{ec2_instance.get('UserName')} - {ec2_instance.get('UserId')}' "
+                                    f"Access key is active more than 90 days")
+              
