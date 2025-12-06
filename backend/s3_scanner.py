@@ -6,5 +6,9 @@ def s3_access_check(s3_instance):
                         f"{access_grant.get('Permission')} permission"
               )
 
+def s3_encryption_check(s3_instance):
+    if s3_instance.get('Encryption') == None:
+         print(f"🚨 Bucket {s3_instance.get('BucketName')} data is not encrypted "
+              )
 
   
