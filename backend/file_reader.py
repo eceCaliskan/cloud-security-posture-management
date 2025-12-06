@@ -1,6 +1,6 @@
 import json
 from ec2_scanner import ec2_ip_check, ec2_open_ports_check, mfa_check, active_key_duration_check
-from s3_scanner import s3_access_check
+from s3_scanner import s3_access_check, s3_encryption_check
 from collections import defaultdict
 
 # Path to mock AWS data
@@ -34,6 +34,7 @@ def start_ec2_scanner():
                 active_key_duration_check(resource)
             if resource.get("Type") == "S3":
                 s3_access_check(resource)
+                s3_encryption_check(resource)
             
 
 if __name__ == "__main__":
